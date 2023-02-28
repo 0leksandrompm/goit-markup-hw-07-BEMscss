@@ -1,0 +1,143 @@
+.fut-adress {
+    display: block;
+    font-style: normal;
+}
+
+.footer {
+    background-color: rgb(47 48 58);
+    color: white;
+    max-width: 1600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &_contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+    
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+    
+    &_contacts.nav__mail-link {
+            margin: 0px;
+        }
+}
+
+.btn-fut {
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-fut {
+    align-items: center;
+    justify-content: center;
+}
+
+.futer-write {
+    display: block;
+    width: 570px;
+    height: 86px;
+    margin-left: auto;
+}
+
+.footer-email {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    color: #fff;
+    padding: 0px 0px 0px 14px;
+}
+
+.footer-post {
+    width: 358px;
+    height: 50px;
+    border: 0px;
+    padding-left: 15px;
+    background-color: rgba(47, 48, 58, 1);
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.futer-form {
+    gap: 10px;
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.foot-icon {
+    stroke: rgba(255, 255, 255, 0.1);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.foot-links {
+    width: 44px;
+    height: 44px;
+}
+
+.foot-lin {
+    background-color: var(--foc-col-whited);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    outline: none;
+    display: flex;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foot-lin:hover,
+.foot-lin:focus {
+    background-color: var(--foc-col-blu);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.fon-fut {
+    fill: var(--foc-col-white);
+}
+
+.foot_link {
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+
+    margin: 0px;
+}
+
+.paragraf-fut {
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #ffffff;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 9px;
+}

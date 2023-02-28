@@ -1,0 +1,14 @@
+    $bg-col-grey: rgba(175, 177, 184, 1);
+    $foc-col-blu: rgba(33, 150, 243, 1);
+    $foc-col-white: rgba(255, 255, 255, 1);
+    $foc-col-whited: rgba(255, 255, 255, 0.1);
+
+$bg__color: (
+    'grey': rgba(175, 177, 184, 1),
+    'blu': rgba(33, 150, 243, 1),
+    'white': rgba(255, 255, 255, 1),
+    'whited': rgba(255, 255, 255, 0.1),   );
+
+@function getColor($key) {
+    @return map-get($bg__color, $key);
+}

@@ -1,0 +1,116 @@
+
+.product {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    &__name-work {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 4px;
+        margin-top: 0;
+        padding: 0px;
+        text-decoration: none;
+    }
+
+    &__any-paragraf {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.875;
+        color: #757575;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-decoration: none;
+    }
+
+    &__border-work {
+        border: 1px solid rgba(238, 238, 238, 1);
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: none;
+    }
+
+    &__emblem {
+        position: relative;
+        overflow: hidden;
+
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &--overley {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(33, 150, 243, 0.2);
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur (4px);
+        transform: translatey(100%);
+
+        transition-property: background-color, color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__reference:hover,
+    &__reference:focus {
+        display: block;
+        text-decoration: none;
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+            0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__reference {
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+            0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    }
+
+    &__reference:hover .product--overley,
+    &__reference:focus .product--overley {
+        transform: translatey(0);
+        background-color: rgba(33, 150, 243, 0.9);
+        color: rgb(255, 255, 255);
+    }
+}
+.wellkom {
+    margin-left: 70px;
+}
+
+.wellkoms {
+    letter-spacing: 0.03em;
+    margin: 0px 0px 20px 0px;
+    line-height: 1.17;
+    font-size: 14px;
+    /* шрифт тут відповідає стандартному в body */
+    font-weight: 700;
+}
+
+.fon {
+    fill: var(--bg-col-grey);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fon:focus,
+.fon:hover {
+    fill: var(--foc-col-blu);
+}
