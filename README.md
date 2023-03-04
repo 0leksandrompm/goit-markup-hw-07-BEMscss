@@ -1,1 +1,2 @@
-# goit-markup-hw-07-BEMscss
+# goit-markup-hw-07BEM
+Home work

@@ -963,6 +963,9 @@ ul .Link_Studio:active,
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.product--overley-desc {
+  text-align: center;
+}
 .product__reference:hover, .product__reference:focus {
   display: block;
   text-decoration: none;
