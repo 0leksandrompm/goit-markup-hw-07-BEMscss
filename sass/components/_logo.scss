@@ -1,5 +1,5 @@
 .logo {
-    color: #2196f3;
+    color: $color-blu;
     font-family: Raleway;
     font-size: 26px;
     line-height: 1.4;
@@ -13,7 +13,7 @@
 
     &-header {
             margin-right: 93px;
-            align-items: baseline;
+            align-items: center;
         }
     
     &-footer {
@@ -21,17 +21,17 @@
         }
 
     &__write {
-        color: rgb(252, 251, 251);
+        color: $color-white;
     }
 
     &__dark {
-        color: rgb(6, 6, 6);
+        color: $color-black;
     }
 
     &:hover,
     .footer_web:hover,
     .footer_web:focus .logo:focus {
-        color: #2196f3;
+        color: $color-blu;
     }
 }
 

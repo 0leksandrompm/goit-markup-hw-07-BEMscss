@@ -1,6 +1,6 @@
 .nav {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     margin-right: auto;
 
     &__items {
@@ -16,7 +16,7 @@
     }
 
             &__contact:first-child {
-                color: rgba(33, 150, 243, 1);
+                color: $color-blu;
                 line-height: 1.4;
             }
 
@@ -30,7 +30,7 @@
     }
 
     &__link {
-        color: #212121;
+        color: $color-black;
         line-height: 1.14;
         letter-spacing: normal;
         font-weight: 500;
@@ -44,12 +44,12 @@
     }
             &__link:hover,
             &__link:focus {
-                color: #2196f3;
+                color: $color-blu;
             }
 
             &__link:hover .header__svg,
             &__link:focus .header__svg {
-                fill: #2196f3;
+                fill: $color-blu;
             }
 
     &__mail-link {
@@ -63,20 +63,20 @@
     }
 
     &__mail-link .nav__link {
-        color: #757575;
+        color: $color-grey;
     }
 
-            &__mail-link .nav__link:hover,
-            &__mail-link .nav__link:focus {
-                color: #2196f3;
-                }
+    &__mail-link .nav__link:hover,
+    &__mail-link .nav__link:focus {
+        color: $color-blu;
+        }
 
     &__mail-link:last-child {
         margin-left: 50px;
     }
             &__mail-link:hover .nav__link,
             &__mail-link:focus-within .nav__link {
-                color: getColor('foc-col-blu');
+                color: $color-blu;
             width: 100%;
                 height: 100%;
             align-items: center;
@@ -84,13 +84,15 @@
             outline: none;
             }
     &__link-page {
+        display: block;
         text-decoration: none;
-        color: rgba(33, 150, 243, 1);
+        color: $color-blu;
         line-height: 1.14;
         letter-spacing: normal;
         font-weight: 500;
         border: none;
-        padding-bottom: 28px;
+        padding-top: 32px;
+        padding-bottom: 26px;
 
         transition-property: color, background-color, box-shadow;
         transition-duration: 250ms;
@@ -104,8 +106,8 @@
         width: 100%;
         height: 4px;
         left: 0px;
-        bottom: -28px;
-        background: #2196f3;
+        bottom: 0;
+        background: $color-blu;
         border-radius: 2px;
         z-index: 10;
     }
@@ -115,7 +117,7 @@
 ul .Link_Studio:active,
 .nav__mail-link:active,
 .foot_link:active {
-    color: #2196f3;
+    color: $color-blu;
 }
 
 .web,

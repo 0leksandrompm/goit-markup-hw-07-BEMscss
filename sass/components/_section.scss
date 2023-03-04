@@ -1,14 +1,14 @@
 /* section hero */
 
 .hero {
-    background-color: #c4c4c4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
+    background-color: $color-grey;
+    background-image: linear-gradient($color-hero-grad,
+            $color-hero-grad),
         url(../images/Img\ Overlay.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top right;
-    color: white;
+    background-position: center;
+    color: $color-white;
     padding: 200px 0;
     max-width: 1600px;
     margin-left: auto;
@@ -35,7 +35,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
-        background-color: rgba(245, 244, 250, 1);
+        background-color: $color-white;
     }
 
     &__title-section {
@@ -48,7 +48,7 @@
     &__paragraf {
         line-height: 1.7;
         letter-spacing: 0.03em;
-        color: #757575;
+        color: $color-grey;
         margin: 0px;
         width: 270px;
     }
@@ -85,14 +85,14 @@
 
     &-section {
             box-sizing: content-box;
-            background-color: #f5f4fa;
+            background-color: $color-white;
         }
     &__socials {
         list-style: none;
         display: flex;
         align-items: center;
         justify-content: center;
-        fill:$bg-col-grey;
+        fill:$color-grey;
         gap: 10px;
         padding: 0;
         margin: 16px 0 0 0;
@@ -107,19 +107,26 @@
         line-height: 1.2;
     }
 
+    &__paragraf {
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+
     &__title {
         list-style: none;
         display: flex;
         margin: 0;
     }
     
-    .product &__paragraf {
+    .product 
+    
+    &__paragraf {
         line-height: 1.875;
     }
     &__name {
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: $color-black;
         margin: 0;
         margin-bottom: 10px;
     }
@@ -135,12 +142,12 @@
     }
 
     &__fon {
-        background-color: #ffffff;
+        background-color: $color-white;
         margin-left: 30px;
         width: 270px;
         margin-left: 30px;
-        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-            0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+        box-shadow: 0px 2px 1px 0px $color-shadow-mod20,
+            0px 1px 1px 0px $color-shadow-mod14;
     }
 
     &__fon:first-child {
@@ -161,6 +168,30 @@
     font-size: 16px;
 }
 
+.product__reference:hover,
+.product__reference:focus {
+    display: block;
+    text-decoration: none;
+    box-shadow: 1px 4px 6px 0px $color-shadow,
+        0px 4px 4px 0px $color-shadow2;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product__reference {
+    text-decoration: none;
+    box-shadow: 1px 4px 6px 0px $color-shadow,
+        0px 4px 4px 0px $color-shadow2;
+}
+
+.product__reference:hover .product--overley,
+.product__reference:focus .product--overley {
+    transform: translatey(0);
+    background-color: $color-blu;
+    color: $color-white;
+}
 
 .ellips {
     width: 44px;
@@ -168,7 +199,7 @@
 
     &-link {
             display: flex;
-            background-color: $foc-col-white;
+            background-color: $color-white;
             border-radius: 100%;
             align-items: center;
             justify-content: center;
@@ -179,32 +210,43 @@
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
-            &:hover, &:focus {
-                    background-color: #2196f3;
-                    border-radius: 100%;
-                    align-items: center;
-                    justify-content: center;
-                    width: 44px;
-                    height: 44px;
-                    padding: 12px;
-                    margin: 0;
-                    outline: none;
-                }
-        
-            &:hover .link-icon,
-            &:focus .link-icon {
-                fill: $foc-col-white;
-            }
+
+
+    
         }
 }
 
-.link-icon {
-    border: none;
-    fill: $bg-col-grey;
+.ellips-link:hover,
+.ellips-link:focus {
+        background-color: $color-blu;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+        margin: 0;
+        outline: none;
+    }
+
+.ellips-link:hover .link-icon,
+.ellips-link:focus .link-icon {
+    fill: $color-white;
 
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.link-icon {
+    border: none;
+    fill: $color-grey;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -225,7 +267,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    fill:$bg-color-blu;
+    fill:$color-blu;
     gap: 30px;
     padding: 0%;
     margin: 0%;
@@ -233,9 +275,9 @@
     &-link {
         width: 170px;
         height: 92px;
-        fill: $bg-col-grey;
+        fill: $color-grey;
         display: block;
-        border: 1px solid rgba(175, 177, 184, 1);
+        border: 1px solid $color-grey;
 
         transition-property: fill, border;
         transition-duration: 250ms;
@@ -251,8 +293,8 @@
 
 .klients-link:focus,
 .klients-link:hover {
-    fill: $foc-col-blu;
-    border: 1px solid $foc-col-blu;
+    fill: $color-blu;
+    border: 1px solid $color-blu;
     outline: none;
 }
 /* section doing*/
@@ -274,8 +316,8 @@
         height: 70px;
         bottom: 0;
         position: absolute;
-        color: rgba(255, 255, 255, 1);
-        background-color: rgba(47, 48, 58, 0.8);
+        color: $color-white;
+        background-color: $color-black;
     }
 
     &__title {

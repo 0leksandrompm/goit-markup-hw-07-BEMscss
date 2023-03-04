@@ -1,8 +1,8 @@
 body {
     font-size: 14px;
     font-family: 'Roboto';
-    background-color: white;
-    color: #212121;
+    background-color:$color-white;
+    color: $color-black;
     letter-spacing: 0.03em;
 
     }
@@ -21,7 +21,7 @@ body {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color:$color-black;
     text-transform: none;
 
     margin: 0px;
@@ -48,10 +48,10 @@ body {
     align-items: baseline;
 }
 .header {
-    border-bottom: 1px solid #ececec;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    border-bottom: 1px solid $color-border;
 
+
+    
     &__container {
             display: flex;
             align-items: center;
@@ -71,7 +71,7 @@ body {
         line-height: 1.6;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: $color-black;
         text-transform: none;
 
         margin: 0px;
@@ -120,9 +120,11 @@ textarea {
     font-size: 16px;
     padding: 6px 22px;
     border: 4px;
-    background-color: rgba(33, 150, 243, 1);
-    color: #f4f5f5;
+    background-color:$color-blu;
+    color: $color-white;
     padding: 6px 25px;
+        border: 1px solid $color-link;
+        border-radius: 4px;
 }
 
 .link1 {
@@ -134,7 +136,9 @@ textarea {
     font-size: 16px;
     padding: 6px 22px;
     border: 4px;
-    background-color: rgb(245, 244, 250);
+    background-color: $color-linkbg;
+    border: 1px solid $color-link;
+        border-radius: 4px;
 
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
@@ -143,12 +147,12 @@ textarea {
 
 .link1:hover,
 .link1:focus {
-    background-color: rgba(33, 150, 243, 1);
-    color: rgb(245, 244, 250);
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-        0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    background-color: $color-blu;
+    color: $color-white;
+    box-shadow: 1px 4px 6px 0px $color-shadow,
+        0px 4px 4px 0px $color-shadow2;
 }
 
 .webstudio:active {
-    color: #2196f3;
+    color: $color-blu;
 }

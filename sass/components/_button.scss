@@ -1,6 +1,6 @@
 .button {
-    background-color: #2196f3;
-    color: #f4f5f5;
+    background-color: $color-blu;
+    color: $color-white;
 
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
@@ -8,38 +8,38 @@
 
     &_servise {
             display: block;
-            background-color: #2196f3;
+            background-color: $color-blu;
             font-size: 16px;
             line-height: 1.875;
             letter-spacing: normal;
             cursor: pointer;
             font-family: inherit;
-            color: #ffffff;
+            color: $color-white;
             font-weight: 700;
             margin: 30px auto 0;
             padding: 10px 32px;
             border: none;
         }
-    &_title {
-        background-color: rgba(47, 48, 58, 1);
-        color: rgb(255, 255, 255);
-        height: 600px;
-        width: 1600px;
-    }
+        &_title {
+            background-color:$color-black;
+            color: $color-white;
+            height: 600px;
+            width: 1600px;
+        }
     &:hover {
-        background-color: rgba(33, 150, 243, 1);
-        color: #f4f5f5;
+        background-color:$color-blu;
+        color: $color-white;
     }
 
     &-mess {
-        background-color: rgba(33, 150, 243, 1);
-        color: rgba(255, 255, 255, 1);
+        background-color:$color-blu;
+        color: $color-white;
         width: 200px;
         height: 50px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 4px 4px $color-shadow;
         border-radius: 4px;
-        border-color: rgba(33, 150, 243, 1);
-        fill: #ffffff;
+        border-color: $color-blu;
+        fill:$color-white;
         gap: 10px;
         padding: 10px 28px;
         border: 0px;

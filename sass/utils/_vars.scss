@@ -1,14 +1,27 @@
-    $bg-col-grey: rgba(175, 177, 184, 1);
-    $foc-col-blu: rgba(33, 150, 243, 1);
-    $foc-col-white: rgba(255, 255, 255, 1);
-    $foc-col-whited: rgba(255, 255, 255, 0.1);
+$color-grey:rgba(175, 177, 184, 1);
+$color-blu:rgba(33, 150, 243, 1);
+$color-white:rgba(255, 255, 255, 1);
+$color-snow:rgba(255, 255, 255, 0.1);
+$color-snow2: rgba(255, 255, 255, 0.3);
+$color-snow3: rgba(255, 255, 255, 0.6);
+$color-green:rgba(0,128,0,1);
+$color-black: rgba(33, 33, 33, 1);
+$color-black-form: rgba(33, 33, 33, 0.2);
+$color-shadow:rgba(0, 0, 0, 0.16);
+$color-blackdrop: rgba(0, 0, 0, 0.4);
+$color-shadow2: rgba(0, 0, 0, 0.06);
+$color-border:rgb(238, 238, 238);
 
-$bg__color: (
-    'grey': rgba(175, 177, 184, 1),
-    'blu': rgba(33, 150, 243, 1),
-    'white': rgba(255, 255, 255, 1),
-    'whited': rgba(255, 255, 255, 0.1),   );
+$color-shadow-mod20: rgba(0, 0, 0, 0.2);
+$color-shadow-mod12: rgba(0, 0, 0, 0.12);
+$color-shadow-mod14: rgba(0, 0, 0, 0.14);
 
-@function getColor($key) {
-    @return map-get($bg__color, $key);
-}
+$color-hero-grad:rgba(47, 48, 58, 0.4);
+
+$color-red: rgba(250,0,0,1);
+$color-rosy: rgb(153, 100, 118, 1);
+
+$color-overley:rgba(33, 150, 243, 0.2);
+
+$color-link:rgb(231, 233, 252);
+$color-linkbg:rgb(244, 244, 253);
