@@ -1048,7 +1048,7 @@ ul .Link_Studio:active,
   border-radius: 4px;
 }
 .button_servise:hover, .button_servise:focus {
-  background-color: rgba(47, 48, 58, 0.4);
+  background-color: rgb(175, 177, 184);
 }
 .button_title {
   background-color: rgb(33, 33, 33);
