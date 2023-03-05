@@ -1,5 +1,6 @@
 $color-grey:rgba(175, 177, 184, 1);
-$color-blu:rgba(33, 150, 243, 1);
+$color-blu:rgb(33 150 243);
+$color-blu-fill: rgb(33 150 243);
 $color-white:rgba(255, 255, 255, 1);
 $color-snow:rgba(255, 255, 255, 0.1);
 $color-snow2: rgba(255, 255, 255, 0.3);
@@ -11,6 +12,9 @@ $color-shadow:rgba(0, 0, 0, 0.16);
 $color-blackdrop: rgba(0, 0, 0, 0.4);
 $color-shadow2: rgba(0, 0, 0, 0.06);
 $color-border:rgb(238, 238, 238);
+$color-SLATE: rgba(67, 68, 85, 1);
+$color-CLOUD: rgba(244, 244, 253, 1);
+$color-NAVY-BLUE: rgba(46, 47, 66, 1);
 
 $color-shadow-mod20: rgba(0, 0, 0, 0.2);
 $color-shadow-mod12: rgba(0, 0, 0, 0.12);

@@ -28,29 +28,36 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    &__icon {
-        width: 270px;
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-        background-color: $color-white;
+
+    &__svg {
+            width: 270px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+            background-color: $color-CLOUD;
+    }
+
+   &__icon {
+       display: flex;
     }
 
     &__title-section {
         line-height: 1.15;
         letter-spacing: normal;
-        font-size: 14px;
-        margin: 0px 0px 10px 0px;
+        font-size: 18px;
+        margin: 0px 0px 8px 0px;
     }
 
     &__paragraf {
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: $color-grey;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: $color-SLATE;
+        text-align: justify;
         margin: 0px;
-        width: 270px;
+        width: 274px;
     }
 }
 
@@ -82,11 +89,24 @@
 .command {
    padding-top: 94px;
    padding-bottom: 94px;
+   background-color: $color-CLOUD;
 
     &-section {
             box-sizing: content-box;
             background-color: $color-white;
         }
+
+
+    &__name {
+        color: $color-NAVY-BLUE;
+        text-transform: capitalize;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+        margin-top: 8px;
+         }
+
+
     &__socials {
         list-style: none;
         display: flex;
@@ -95,12 +115,12 @@
         fill:$color-grey;
         gap: 10px;
         padding: 0;
-        margin: 16px 0 0 0;
     }
 
     &__transcript {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        text-align: center;
     }
 
     &__title &__paragraf {
@@ -108,17 +128,32 @@
     }
 
     &__paragraf {
-        margin-bottom: 16px;
+        line-height: 1,5;
+        margin-bottom: 8px;
         margin-top: 0;
     }
 
     &__title {
         list-style: none;
         display: flex;
-        margin: 0;
+        margin: 0px;
+        padding: 0px;
     }
-    
-    .product 
+
+    &__fon {
+        background-color: $color-white;
+        width: 270px;
+        margin-right: 24px ;
+        
+        box-shadow: 0px 2px 1px 0px $color-shadow-mod20,
+            0px 1px 1px 0px $color-shadow-mod14;
+        border-radius: 0px 0px 4px 4px
+    }
+
+              
+}
+   
+    .product {
     
     &__paragraf {
         line-height: 1.875;
@@ -141,14 +176,7 @@
         padding: 0px;
     }
 
-    &__fon {
-        background-color: $color-white;
-        margin-left: 30px;
-        width: 270px;
-        margin-left: 30px;
-        box-shadow: 0px 2px 1px 0px $color-shadow-mod20,
-            0px 1px 1px 0px $color-shadow-mod14;
-    }
+ 
 
     &__fon:first-child {
         margin-left: 0px;
@@ -170,8 +198,6 @@
 
 .product__reference:hover,
 .product__reference:focus {
-    display: block;
-    text-decoration: none;
     box-shadow: 1px 4px 6px 0px $color-shadow,
         0px 4px 4px 0px $color-shadow2;
 
@@ -219,14 +245,6 @@
 .ellips-link:hover,
 .ellips-link:focus {
         background-color: $color-blu;
-        border-radius: 100%;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        padding: 12px;
-        margin: 0;
-        outline: none;
     }
 
 .ellips-link:hover .link-icon,
@@ -273,10 +291,9 @@
     margin: 0%;
 
     &-link {
-        width: 170px;
-        height: 92px;
         fill: $color-grey;
-        display: block;
+        display: flex;
+        border-radius: 4px;
         border: 1px solid $color-grey;
 
         transition-property: fill, border;
@@ -295,7 +312,6 @@
 .klients-link:hover {
     fill: $color-blu;
     border: 1px solid $color-blu;
-    outline: none;
 }
 /* section doing*/
 
@@ -318,6 +334,10 @@
         position: absolute;
         color: $color-white;
         background-color: $color-black;
+
+        &:hover, &:focus{
+            background-color: $color-shadow;
+        }
     }
 
     &__title {
