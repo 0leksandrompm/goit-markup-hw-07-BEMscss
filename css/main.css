@@ -141,7 +141,7 @@ textarea {
   font-size: 16px;
   padding: 6px 22px;
   border: 4px;
-  background-color: rgb(33, 150, 243);
+  background-color: rgba(33, 150, 243, 0.9);
   color: rgb(255, 255, 255);
   padding: 6px 25px;
   border: 1px solid rgb(231, 233, 252);
@@ -172,14 +172,14 @@ textarea {
 
 .link1:hover,
 .link1:focus {
-  background-color: rgb(33, 150, 243);
+  background-color: rgba(33, 150, 243, 0.9);
   color: rgb(255, 255, 255);
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
 }
 
 .webstudio:active {
-  color: rgb(33, 150, 243);
+  color: rgba(33, 150, 243, 0.9);
 }
 
 /* section hero */
@@ -283,7 +283,7 @@ textarea {
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 8px;
-  margin-top: 8px;
+  margin-top: 0px;
 }
 .command__socials {
   list-style: none;
@@ -364,34 +364,6 @@ textarea {
   font-size: 16px;
 }
 
-.product__reference:hover,
-.product__reference:focus {
-  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-  -webkit-transition-property: -webkit-box-shadow;
-  transition-property: -webkit-box-shadow;
-  transition-property: box-shadow;
-  transition-property: box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.product__reference {
-  text-decoration: none;
-  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-}
-
-.product__reference:hover .product--overley,
-.product__reference:focus .product--overley {
-  -webkit-transform: translatey(0);
-          transform: translatey(0);
-  background-color: rgb(33, 150, 243);
-  color: rgb(255, 255, 255);
-}
-
 .ellips {
   width: 44px;
   height: 44px;
@@ -420,7 +392,7 @@ textarea {
 
 .ellips-link:hover,
 .ellips-link:focus {
-  background-color: rgb(33, 150, 243);
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .ellips-link:hover .link-icon,
@@ -464,7 +436,7 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  fill: rgb(33, 150, 243);
+  fill: rgba(33, 150, 243, 0.9);
   gap: 30px;
   padding: 0%;
   margin: 0%;
@@ -490,8 +462,8 @@ textarea {
 
 .klients-link:focus,
 .klients-link:hover {
-  fill: rgb(33, 150, 243);
-  border: 1px solid rgb(33, 150, 243);
+  fill: rgba(33, 150, 243, 0.9);
+  border: 1px solid rgba(33, 150, 243, 0.9);
 }
 
 /* section doing*/
@@ -611,14 +583,12 @@ textarea {
   padding-left: 15px;
   font-size: 16px;
   line-height: 1.25;
-  color: rgb(33, 33, 33);
+  background-color: rgb(46, 47, 66);
+  color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.16));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.16));
   border-radius: 4px;
-}
-.footer-post:hover, .footer-post:focus {
-  border: 2px solid rgb(33, 150, 243);
 }
 
 .futer-form {
@@ -677,7 +647,7 @@ textarea {
 
 .foot-lin:hover,
 .foot-lin:focus {
-  background-color: rgb(33, 150, 243);
+  background-color: rgba(33, 150, 243, 0.9);
   border-radius: 100%;
 }
 
@@ -702,7 +672,7 @@ textarea {
 }
 
 .logo {
-  color: rgb(33, 150, 243);
+  color: rgba(33, 150, 243, 0.9);
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.4;
@@ -734,7 +704,7 @@ textarea {
 .logo:hover,
 .logo .footer_web:hover,
 .logo .footer_web:focus .logo:focus {
-  color: rgb(33, 150, 243);
+  color: rgba(33, 150, 243, 0.9);
 }
 
 .nav {
@@ -759,7 +729,7 @@ textarea {
   margin: 0px;
 }
 .nav__contact:first-child {
-  color: rgb(33, 150, 243);
+  color: rgba(33, 150, 243, 0.9);
   line-height: 1.4;
 }
 .nav__list {
@@ -786,15 +756,15 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition-property: color;
-  transition-property: color;
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__link:hover, .nav__link:focus {
-  color: rgb(33, 150, 243);
+  color: rgba(33, 150, 243, 0.9);
 }
 .nav__link:hover .header__svg, .nav__link:focus .header__svg {
   fill: rgb(33, 150, 243);
@@ -816,18 +786,18 @@ textarea {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__mail-link .nav__link:hover, .nav__mail-link .nav__link:focus {
-  color: rgb(33, 150, 243);
+  color: rgba(33, 150, 243, 0.9);
 }
 .nav__mail-link:last-child {
   margin-left: 50px;
 }
 .nav__mail-link:hover .nav__link, .nav__mail-link:focus-within .nav__link {
-  color: rgb(33, 150, 243);
+  color: rgba(33, 150, 243, 0.9);
 }
 .nav__link-page {
   display: block;
   text-decoration: none;
-  color: rgb(33, 150, 243);
+  color: rgba(33, 150, 243, 0.9);
   line-height: 1.14;
   letter-spacing: normal;
   font-weight: 500;
@@ -851,7 +821,7 @@ textarea {
   height: 4px;
   left: 0px;
   bottom: 0;
-  background: rgb(33, 150, 243);
+  background: rgba(33, 150, 243, 0.9);
   border-radius: 2px;
   z-index: 10;
 }
@@ -859,7 +829,7 @@ textarea {
 ul .Link_Studio:active,
 .nav__mail-link:active,
 .foot_link:active {
-  color: rgb(33, 150, 243);
+  color: rgba(33, 150, 243, 0.9);
 }
 
 .web,
@@ -946,10 +916,10 @@ ul .Link_Studio:active,
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: justify;
-  -webkit-transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, box-shadow;
-  transition-property: background-color, color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-property: color, background-color, -webkit-transform;
+  transition-property: color, background-color, -webkit-transform;
+  transition-property: transform, color, background-color;
+  transition-property: transform, color, background-color, -webkit-transform;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -961,6 +931,13 @@ ul .Link_Studio:active,
 .product__reference:hover, .product__reference:focus {
   display: block;
   text-decoration: none;
+  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+}
+.product__reference {
+  text-decoration: none;
+  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -970,21 +947,11 @@ ul .Link_Studio:active,
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product__reference {
-  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-}
 .product__reference:hover .product--overley, .product__reference:focus .product--overley {
-  background-color: rgb(33, 150, 243);
+  background-color: rgba(33, 150, 243, 0.9);
   color: rgb(255, 255, 255);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .product > .product__border-work {
@@ -1017,16 +984,14 @@ ul .Link_Studio:active,
 
 .fon:focus,
 .fon:hover {
-  fill: rgb(33, 150, 243);
+  fill: rgba(33, 150, 243, 0.9);
 }
 
 .button {
-  background-color: rgb(33, 150, 243);
+  background-color: rgba(33, 150, 243, 0.9);
   color: rgb(255, 255, 255);
-  -webkit-transition-property: color, background-color, -webkit-box-shadow;
-  transition-property: color, background-color, -webkit-box-shadow;
-  transition-property: color, background-color, box-shadow;
-  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1034,7 +999,7 @@ ul .Link_Studio:active,
 }
 .button_servise {
   display: block;
-  background-color: rgb(33, 150, 243);
+  background-color: rgba(33, 150, 243, 0.9);
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: normal;
@@ -1046,9 +1011,15 @@ ul .Link_Studio:active,
   padding: 10px 32px;
   border: none;
   border-radius: 4px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button_servise:hover, .button_servise:focus {
-  background-color: rgb(175, 177, 184);
+  background-color: rgba(33, 150, 243, 0.7);
 }
 .button_title {
   background-color: rgb(33, 33, 33);
@@ -1057,18 +1028,18 @@ ul .Link_Studio:active,
   width: 1600px;
 }
 .button:hover {
-  background-color: rgb(33, 150, 243);
+  background-color: rgba(33, 150, 243, 0.9);
   color: rgb(255, 255, 255);
 }
 .button-mess {
-  background-color: rgb(33, 150, 243);
+  background-color: rgba(33, 150, 243, 0.9);
   color: rgb(255, 255, 255);
   width: 200px;
   height: 50px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  border-color: rgb(33, 150, 243);
+  border-color: rgba(33, 150, 243, 0.9);
   fill: rgb(255, 255, 255);
   gap: 10px;
   padding: 10px 28px;
@@ -1078,13 +1049,24 @@ ul .Link_Studio:active,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 0;
   margin-bottom: 0;
   cursor: pointer;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-mess:hover {
-  background-color: rgb(0, 128, 0);
-  color: rgb(33, 33, 33);
+.button-mess:hover, .button-mess:focus {
+  background-color: rgba(33, 150, 243, 0.7);
 }
 
 .register-form-input:valid {
@@ -1100,44 +1082,50 @@ ul .Link_Studio:active,
   outline-color: rgb(250, 0, 0);
 }
 
-.register-form-input:focus + .register-form-icon {
-  fill: rgb(33, 150, 243);
-  -webkit-transition-property: fill;
-  transition-property: fill;
+.register-form-input {
+  -webkit-transition-property: fill, border-color;
+  transition-property: fill, border-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.register-form-input:focus + .register-form-icon {
+  fill: rgba(33, 150, 243, 0.9);
+}
+
 .register-form-input:hover + .register-form-icon {
-  fill: rgb(33, 150, 243);
+  fill: rgba(33, 150, 243, 0.9);
 }
 
 .register-form-input:hover {
-  border-color: rgb(33, 150, 243);
+  border-color: rgba(33, 150, 243, 0.9);
 }
 
 .register-form-message:-moz-placeholder-shown {
-  outline-color: rgb(33, 150, 243);
+  outline-color: rgba(33, 150, 243, 0.9);
 }
 
 .register-form-message:-ms-input-placeholder {
-  outline-color: rgb(33, 150, 243);
+  outline-color: rgba(33, 150, 243, 0.9);
 }
 
 .register-form-message:placeholder-shown {
-  outline-color: rgb(33, 150, 243);
+  outline-color: rgba(33, 150, 243, 0.9);
 }
 
-.register-form-message:hover {
-  border-color: rgb(33, 150, 243);
+.register-form-message {
   -webkit-transition-property: border-color;
   transition-property: border-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-message:hover {
+  border-color: rgba(33, 150, 243, 0.9);
 }
 
 .register-form-message:not(:-moz-placeholder-shown) {
@@ -1183,17 +1171,24 @@ ul .Link_Studio:active,
   min-width: 200px;
   height: 50px;
   padding: 10px 52px;
+  border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   border: none;
-  background-color: rgb(33, 150, 243);
+  background-color: rgba(33, 150, 243, 0.9);
   color: rgb(255, 255, 255);
   font-size: 16px;
   line-height: 1.875;
   cursor: pointer;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .register-form-btn:hover, .register-form-btn:focus {
-  background-color: rgb(0, 128, 0);
+  background-color: rgba(33, 150, 243, 0.7);
 }
 
 .register-form-field {
@@ -1218,7 +1213,7 @@ ul .Link_Studio:active,
 }
 
 .register-form-input:focus {
-  border-color: rgb(33, 150, 243);
+  border-color: rgba(33, 150, 243, 0.9);
 }
 
 .register-form-message {
@@ -1238,7 +1233,7 @@ ul .Link_Studio:active,
 }
 
 .register-form-message:focus {
-  border-color: rgb(33, 150, 243);
+  border-color: rgba(33, 150, 243, 0.9);
 }
 
 .register-form-heading {
@@ -1293,13 +1288,19 @@ ul .Link_Studio:active,
   line-height: 1.7142857143;
   margin-left: 8px;
   color: rgb(33, 33, 33);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .register-form-desc:hover, .register-form-descfocus {
   color: rgb(175, 177, 184);
 }
 
 .register-form-link {
-  color: rgb(33, 150, 243);
+  color: rgba(33, 150, 243, 0.9);
 }
 
 input [type=checkbox] {
@@ -1384,5 +1385,5 @@ input [type=checkbox] {
 }
 
 .modal-btn:hover {
-  fill: rgb(33, 150, 243);
+  fill: rgba(33, 150, 243, 0.9);
 }/*# sourceMappingURL=main.css.map */

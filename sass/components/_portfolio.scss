@@ -71,9 +71,10 @@
             letter-spacing: 0.02em;
             text-align: justify;
 
-        transition-property: background-color, color, box-shadow;
+        transition-property:transform, color, background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
                 &-desc{
                     margin-top: 40px;
                 }
@@ -83,15 +84,19 @@
     &__reference:focus {
         display: block;
         text-decoration: none;
- 
-        transition-property: box-shadow;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 1px 4px 6px 0px $color-shadow,
+                0px 4px 4px 0px $color-shadow2;
+
     }
 
     &__reference {
+        text-decoration: none;
         box-shadow: 1px 4px 6px 0px $color-shadow,
             0px 4px 4px 0px $color-shadow2;
+
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
               }
             
 
@@ -99,12 +104,13 @@
      &__reference:focus .product--overley {
         background-color: $color-blu;
          color: $color-white;
+         transform: translateY(0);
 
-        transition-property: transform;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     }
+    }
 }
+
+
+
 
 .product > .product__border-work {
     text-decoration: none;

@@ -33,6 +33,8 @@
     margin-right: 10px;
     align-items: center;
     justify-content: center;
+
+    
 }
 
 .icon-fut {
@@ -64,15 +66,14 @@
     padding-left: 15px;
     font-size: 16px;
     line-height: 1.25;
-    color: $color-black;
+    background-color: $color-NAVY-BLUE;
+    color: $color-white06;
 
     border: 1px solid $color-snow2;
     filter: drop-shadow(0px 4px 4px $color-shadow);
     border-radius: 4px;
 
-        &:hover, &:focus {
-        border: 2px solid $color-blu;
-}}
+}
 
 .futer-form {
     gap: 10px;
